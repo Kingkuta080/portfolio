@@ -97,6 +97,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="md:w-1/2"
           >
+            {/* image */}
             <Image
               src={bg}
               alt="Ubaidullah Abdullah"
