@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-blue-900">
-            UB
+            UA
           </Link>
 
           {/* Desktop Menu */}
