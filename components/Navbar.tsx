@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-blue-900">
+          <Link href="/" className="text-2xl font-bold text-black">
             UA
           </Link>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-blue-900 focus:outline-none"
+            className="md:hidden text-black focus:outline-none"
             onClick={toggleMobileMenu}
             aria-label="Toggle Menu"
           >
@@ -105,7 +105,7 @@ export default function Navbar() {
                     key={href}
                     href={href}
                     onClick={closeMobileMenu}
-                    className={`nav-link block text-blue-900 hover:text-blue-700 ${
+                    className={`nav-link block text-black hover:text-black ${
                       activeSection === href.slice(1) ? "active" : ""
                     }`}
                   >
