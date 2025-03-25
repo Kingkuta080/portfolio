@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #1e40af;
+  --secondary-blue: #3b82f6;
+  --primary-brown: #78350f;
+  --secondary-brown: #92400e;
+}
+
+body {
+  @apply bg-slate-50;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.skill-bar {
+  @apply h-2 bg-blue-200 rounded-full overflow-hidden;
+}
+
+.skill-progress {
+  @apply h-full bg-blue-600 rounded-full transition-all duration-1000;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.nav-link {
+  @apply text-gray-600 hover:text-blue-900 transition-colors duration-200;
+}
+
+.nav-link.active {
+  @apply text-blue-900 font-semibold;
+}
+
+.section-heading {
+  @apply text-4xl font-bold mb-8 text-blue-900;
+}
+
+.blog-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+.testimonial-card {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.footer-link {
+  @apply text-gray-400 hover:text-white transition-colors duration-200;
+}
